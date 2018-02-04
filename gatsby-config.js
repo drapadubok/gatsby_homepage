@@ -4,7 +4,7 @@ module.exports = {
     title: 'Dmitry Smirnov - Data and Shit',
     subtitle: 'There is a lot of data and really a lot of shit.',
     copyright: '© All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'dmitrysmirnov',
     menu: [
       {
         label: 'Articles',
@@ -26,8 +26,8 @@ module.exports = {
       name: 'Dmitry Smirnov',
       email: 'dmi.smirnov07@gmail.com',
       telegram: '#',
-      twitter: 'ChansonAddict',
-      github: 'drapadubok',
+      twitter: '#',
+      github: '#',
       rss: '#',
       vk: '#'
     }

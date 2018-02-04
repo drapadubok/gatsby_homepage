@@ -4,7 +4,10 @@ import '../assets/css/font-awesome.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import '../assets/css/app.css';
 import SidebarComponent from '../components/SidebarComponent';
-import { Sidebar, Segment, Button, Grid } from 'semantic-ui-react';
+import MediaSidebarComponent from '../components/MediaSidebar';
+import Footer from '../components/Footer';
+import Links from '../components/Links';
+import { Container, Sidebar, Segment, Button, Grid, Menu } from 'semantic-ui-react';
 
 class Layout extends React.Component {
 
@@ -16,17 +19,58 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <Sidebar.Pushable as={Segment}>
-        <Helmet defaultTitle="Dmitry Smirnov - Data and Shit" />
-        <SidebarComponent {...this.props} visible={this.state.visible} />
-        <Sidebar.Pusher>
-          <Segment basic>
-            {children({...this.props, toggleVisibility: this.toggleVisibility.bind(this)})}
-          </Segment>
-        </Sidebar.Pusher>
-      </Sidebar.Pushable>
+        <Grid stackable padded>
+          <Helmet defaultTitle="Dmitry Smirnov - Data and Shit" />
+          <Grid.Column width={3} className="sidebar__left">
+            <SidebarComponent {...this.props} visible={this.state.visible} />
+          </Grid.Column>
+          <Grid.Column width={10} className="content__main">
+            {/*<Container>
+              <Button icon="bars" onClick={this.toggleVisibility.bind(this)}></Button>
+            </Container>*/}
+            <Segment basic>
+              <Container>
+                {children({...this.props})}
+              </Container>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column width={3} className="sidebar__right">
+            <MediaSidebarComponent {...this.props} visible={this.state.visible} />
+          </Grid.Column>
+          {/*
+          <Grid.Row>
+            <Grid.Column width={16}>
+              <Segment>
+                <Footer {...this.props} />
+              </Segment>
+            </Grid.Column>
+          </Grid.Row>
+          */}
+        </Grid>
     );
   }
 }
 
 export default Layout;
+
+export const pageQuery = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        subtitle
+        copyright
+        author {
+          name
+          email
+          twitter
+          github
+        }
+        menu {
+          label
+          path
+          icon
+        }
+      }
+    }
+  }
+`;

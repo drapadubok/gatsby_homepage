@@ -16,9 +16,6 @@ class IndexRoute extends React.Component {
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={16}>
-            <Button className="toggle" icon="bars" onClick={this.props.toggleVisibility}></Button>
-          </Grid.Column>
-          <Grid.Column width={16}>
             <Header className="title" as="header" floated='left'>
               <p><strong>Dmitry Smirnov</strong> with thoughts on life and engineering</p>
             </Header>

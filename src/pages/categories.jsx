@@ -11,7 +11,7 @@ class CategoriesRoute extends React.Component {
     return (
       <div>
         <Helmet title={`All Categories - ${title}`} />
-        <div className="content">
+        <div>
           <div className="content__inner">
             <div className="page">
               <h1 className="page__title">Categories</h1>

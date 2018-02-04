@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import SidebarComponent from '../components/SidebarComponent';
 import CategoryTemplateDetails from '../components/CategoryTemplateDetails';
+import { Grid } from 'semantic-ui-react';
 
 class CategoryTemplate extends React.Component {
   render() {
@@ -9,11 +9,14 @@ class CategoryTemplate extends React.Component {
     const { category } = this.props.pathContext;
 
     return (
-      <div>
+      <Grid container stackable verticalAlign='middle'>
         <Helmet title={`${category} - ${title}`} />
-        <SidebarComponent {...this.props} />
-        <CategoryTemplateDetails {...this.props} />
-      </div>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <CategoryTemplateDetails {...this.props} />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }

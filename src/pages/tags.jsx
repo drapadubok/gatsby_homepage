@@ -11,7 +11,7 @@ class TagsRoute extends React.Component {
     return (
       <div>
         <Helmet title={`All Tags - ${title}`} />
-        <div className="content">
+        <div>
           <div className="content__inner">
             <div className="page">
               <h1 className="page__title">Tags</h1>

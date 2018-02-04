@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import SidebarComponent from '../components/SidebarComponent';
 import TagTemplateDetails from '../components/TagTemplateDetails';
+import { Grid } from 'semantic-ui-react';
 
 class TagTemplate extends React.Component {
   render() {
@@ -9,11 +10,14 @@ class TagTemplate extends React.Component {
     const { tag } = this.props.pathContext;
 
     return (
-      <div>
+      <Grid container stackable verticalAlign='middle'>
         <Helmet title={`All Posts tagget as "${tag}" - ${title}`} />
-        <SidebarComponent {...this.props} />
-        <TagTemplateDetails {...this.props} />
-      </div>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <TagTemplateDetails {...this.props} />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }
