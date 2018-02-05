@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import Post from '../components/Post';
 import { Divider, Sidebar, Grid, Segment, Button, Menu, Header } from 'semantic-ui-react';
 
-
 class IndexRoute extends React.Component {
   render() {
     const items = [];

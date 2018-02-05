@@ -34,7 +34,7 @@ class SidebarComponent extends React.Component {
                 <List.Content floated='right'>
                   <Icon name={item.icon}/>
                 </List.Content>
-                <Divider />
+                <Divider className="sidebar__left__menu__divider"/>
               </List.Item>
             ))}
           </List>
