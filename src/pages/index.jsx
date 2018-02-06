@@ -20,7 +20,7 @@ class IndexRoute extends React.Component {
             </Header>
           </Grid.Column>
         </Grid.Row>
-        <Divider />
+        <Divider className="content__main__divider"/>
         <Grid.Row>
           <Grid.Column width={16}>
             {items}

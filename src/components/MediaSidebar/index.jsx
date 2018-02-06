@@ -5,21 +5,16 @@ import image from '../../assets/images/image.png'
 
 class MediaSidebarComponent extends React.Component {
   render() {
-    return (      
+    return (
 		<Item.Group divided>
 			<Item>
-				<Item.Image size='small' src={image} />
-				<Item.Content verticalAlign='middle'>Content A</Item.Content>
+				<Item.Image size='medium' src={image} />
 			</Item>
-
 			<Item>
-				<Item.Image size='small' src={image} />
-				<Item.Content verticalAlign='middle'>Content B</Item.Content>
+				<Item.Image size='medium' src={image} />
 			</Item>
-
 			<Item>
-				<Item.Image size='small' src={image} />
-				<Item.Content content='Content C' verticalAlign='middle' />
+				<Item.Image size='medium' src={image} />
 			</Item>
 		</Item.Group>
     );
@@ -27,5 +22,3 @@ class MediaSidebarComponent extends React.Component {
 }
 
 export default MediaSidebarComponent;
-
-

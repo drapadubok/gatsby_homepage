@@ -7,7 +7,7 @@ module.exports = {
     disqusShortname: 'dmitrysmirnov',
     menu: [
       {
-        label: 'Articles',
+        label: 'Blog',
         path: '/',
         icon: 'home'
       },
@@ -17,9 +17,19 @@ module.exports = {
         icon: 'flask'
       },
       {
+        label: 'Services',
+        path: '/services/',
+        icon: 'settings'
+      },
+      {
         label: 'Contact me',
         path: '/contact/',
         icon: 'wrench'
+      },
+      {
+        label: 'Academic',
+        path: '/academic/',
+        icon: 'flask'
       }
     ],
     author: {
