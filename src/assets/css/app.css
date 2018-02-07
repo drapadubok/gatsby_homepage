@@ -39,6 +39,11 @@ body {
   padding: 0 !important;
 	position: relative;
   cursor: pointer;
+
+	border-bottom: 3px solid transparent;
+	border-image: linear-gradient(to right, #5e42a6, #b74e91);
+	border-image-slice: 1;
+
 }
 
 .sidebar__left__menu__link:hover {
@@ -49,8 +54,8 @@ body {
 
 .sidebar__left__menu__link.active {
   border-radius: 0 !important;
-  color: rgba(255, 255, 255, 0.95) !important;
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  background-color: rgba(255, 255, 255, 0.35) !important;
 }
 
 .sidebar__left a {

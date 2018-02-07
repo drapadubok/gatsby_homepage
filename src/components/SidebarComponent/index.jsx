@@ -51,7 +51,7 @@ class SidebarComponent extends React.Component {
                   {item.label}
                 </List.Content>
               </List.Item>
-              <Divider className="sidebar__left__menu__divider"/>
+              {/*<Divider className="sidebar__left__menu__divider"/>*/}
             </div>
           ))}
         </List>
