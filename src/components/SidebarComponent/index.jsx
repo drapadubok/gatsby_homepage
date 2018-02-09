@@ -3,7 +3,7 @@ import get from 'lodash/get';
 import Link from 'gatsby-link';
 import { navigateTo } from 'gatsby-link';
 import Links from '../Links';
-import { Dropdown, Segment, Label, Input, List, Image, Icon, Header, Menu, Sidebar, Divider } from 'semantic-ui-react';
+import { Button, Dropdown, Segment, Label, Input, List, Image, Icon, Header, Menu, Sidebar, Divider } from 'semantic-ui-react';
 import profilePic from '../../pages/photo.jpg';
 import './style.scss';
 
@@ -39,20 +39,15 @@ class SidebarComponent extends React.Component {
         </Segment>
         <List selection className="sidebar__left__menu">
           {menu.map(item => (
-            <div
-              onClick={this.handleItemClick.bind(this, item)}
-              key={item.path}
-              className={`sidebar__left__menu__link ${item.path === activeItem ? "active" : ""}`}>
-              <List.Item>
-                <List.Content floated='right'>
-                  <Icon name={item.icon} />
-                </List.Content>
-                <List.Content>
-                  {item.label}
-                </List.Content>
-              </List.Item>
-              {/*<Divider className="sidebar__left__menu__divider"/>*/}
-            </div>
+            <List.Item onClick={this.handleItemClick.bind(this, item)}
+            key={item.path}
+            className={`sidebar__left__menu__link ${item.path === activeItem ? "active" : ""}`}>
+
+              <List.Content floated="right">
+                <Icon name={item.icon} size="big"/>
+              </List.Content>
+              {item.label}
+            </List.Item>
           ))}
         </List>
       </div>
