@@ -12,18 +12,15 @@ body {
 .sidebar__left {
   background-color: #312450;
   min-height: 100vh;
-  padding: 0 !important;
 }
 
 .sidebar__right {
   background-color: #312450;
   min-height: 100vh;
-  padding: 0 !important;
 }
 
 .content__main {
   background-color: #f1f1f1;
-  /*min-height: 100vh;*/
   height: 100vh;
   overflow-y:scroll;
   padding: 0 !important;
@@ -73,12 +70,21 @@ body {
 
 /* Services */
 .content__main .services {
+  color: rgba(255, 255, 255, 0.95);
   background-color: #b74e91 !important;
   height: 100vh;
+  padding-top: 30px;
 }
 
+.content__main .services .header {
+  color: rgba(255, 255, 255, 0.95);
+}
 .services__item {
-
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Main styling */
@@ -108,8 +114,6 @@ body {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.55);
 }
-
-
 
 
 

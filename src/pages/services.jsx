@@ -14,44 +14,42 @@ class Services extends React.Component {
           <Grid stackable>
             <Grid.Row columns={2}>
               <Grid.Column>
-                <Item className="services__item">
-                  <Icon size="huge" circular name="settings" />
-                  <Item.Content>
-                    <Item.Header as='a'>12 Years a Slave</Item.Header>
-                    <Item.Meta>
-                      <span className='cinema'>Union Square 14</span>
-                    </Item.Meta>
-                    <Item.Description>meh</Item.Description>
-                    <Item.Extra>
-                      <Label>IMAX</Label>
-                      <Label icon='globe' content='Additional Languages' />
-                    </Item.Extra>
-                  </Item.Content>
-                </Item>
+                <article className="services__item">
+                  <Icon name="signal" size="huge" />
+                  <div className="content">
+                    <h3>Sed magna finibus</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                  </div>
+                </article>
               </Grid.Column>
               <Grid.Column>
-                <Item>
-                  <Icon size="huge" circular name="settings" />
-                  <Item.Content>
-                    <Item.Header as='a'>12 Years a Slave</Item.Header>
-                    <Item.Meta>
-                      <span className='cinema'>Union Square 14</span>
-                    </Item.Meta>
-                    <Item.Description>meh</Item.Description>
-                    <Item.Extra>
-                      <Label>IMAX</Label>
-                      <Label icon='globe' content='Additional Languages' />
-                    </Item.Extra>
-                  </Item.Content>
-                </Item>
+              <article className="services__item">
+                <Icon name="diamond" size="huge" />
+                <div className="content">
+                  <h3>Portitor ullamcorper</h3>
+                  <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                </div>
+              </article>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={2}>
               <Grid.Column>
-                <Image src={image} />
+                <article className="services__item">
+                  <Icon name="plane" size="huge" />
+                  <div className="content">
+                    <h3>Sapien veroeros</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                  </div>
+                </article>
               </Grid.Column>
               <Grid.Column>
-                <Image src={image} />
+                <article className="services__item">
+                  <Icon name="rocket" size="huge" />
+                  <div className="content">
+                    <h3>Quam lorem ipsum</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                  </div>
+                </article>
               </Grid.Column>
             </Grid.Row>
           </Grid>
