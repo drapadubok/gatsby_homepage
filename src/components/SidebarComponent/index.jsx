@@ -24,7 +24,7 @@ class SidebarComponent extends React.Component {
 
     return (
       <div>
-        <Segment basic>
+        <Segment basic className="sidebar__left__head">
           <Link to="/">
             <Image
               src={profilePic}
@@ -32,7 +32,7 @@ class SidebarComponent extends React.Component {
               alt={author.name}
             />
           </Link>
-          <Header as="h2" className="sidebar__left__header">
+          <Header as="h2" className="sidebar__left__author">
             <Link to="/">{author.name}</Link>
           </Header>
           <p className="sidebar__left__subtitle">{subtitle}</p>
@@ -42,10 +42,6 @@ class SidebarComponent extends React.Component {
             <List.Item onClick={this.handleItemClick.bind(this, item)}
             key={item.path}
             className={`sidebar__left__menu__link ${item.path === activeItem ? "active" : ""}`}>
-
-              <List.Content floated="right">
-                <Icon name={item.icon} size="big"/>
-              </List.Content>
               {item.label}
             </List.Item>
           ))}

@@ -36,11 +36,7 @@ class Layout extends React.Component {
             <SidebarComponent {...this.props} visible={this.state.visible} />
           </Grid.Column>
           <Grid.Column width={10} className="content__main">
-            <Segment basic>
-              <Container>
-                {children({...this.props})}
-              </Container>
-            </Segment>
+            {children({...this.props})}
           </Grid.Column>
           <Grid.Column width={3} className="sidebar__right">
             <MediaSidebarComponent {...this.props} visible={this.state.visible} />

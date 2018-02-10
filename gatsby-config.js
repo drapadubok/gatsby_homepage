@@ -7,14 +7,14 @@ module.exports = {
     disqusShortname: 'dmitrysmirnov',
     menu: [
       {
-        label: 'Blog',
-        path: '/',
-        icon: 'home'
-      },
-      {
         label: 'About me',
         path: '/about/',
         icon: 'flask'
+      },
+      {
+        label: 'Blog',
+        path: '/',
+        icon: 'home'
       },
       {
         label: 'Services',
