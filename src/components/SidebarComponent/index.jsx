@@ -4,8 +4,7 @@ import Link from 'gatsby-link';
 import { navigateTo } from 'gatsby-link';
 import Links from '../Links';
 import { Button, Dropdown, Segment, Label, Input, List, Image, Icon, Header, Menu, Sidebar, Divider } from 'semantic-ui-react';
-import profilePic from '../../pages/photo.jpg';
-import './style.scss';
+import profilePic from '../../assets/images/photo.jpg';
 
 class SidebarComponent extends React.Component {
 

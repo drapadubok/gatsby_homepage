@@ -1,79 +1,88 @@
 {
   "basics": {
     "name": "Dmitry (Dima) Smirnov",
-    "label": "Data Satanist",
+    "label": "Professional problem solver",
     "email": "dmi.smirnov07@gmail.com",
     "phone": "+35850-301-5072",
     "website": "https://www.dmitrysmirnov.eu"
   },
   "work": [
     {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
+      "name": "Yousician",
+      "location": "Helsinki, Finland",
+      "description": "World's largest music educator.",
+      "position": "Data engineer",
+      "url": "https://yousician.com",
+      "startDate": "2017-02-01",
+      "endDate": "Present",
+      "summary": "",
       "highlights": [
-        "Started the company"
+        "",
+        "",
+        ""
       ]
     },
     {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
+      "name": "Enoro, Utilytics",
+      "location": "Espoo, Finland",
+      "description": "Software solutions for smart energy management.",
+      "position": "Data scientist",
+      "url": "http://www.utilytics.com/",
+      "startDate": "2016-08-01",
+      "endDate": "2017-02-01",
+      "summary": "Developed Utilytics cloud application for energy data analysis.",
       "highlights": [
-        "Started the company"
+        "Full-stack development, delivered multiple features for the application itself.",
+        "Successfully implemented models and multiple analytic dashboards allowing customers to improve their business decision process."
       ]
     },
     {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
+      "name": "Aalto University School of Science, Department of Neuroscience and Biomedical Engineering, Brain and Mind Lab",
+      "location": "Espoo, Finland",
+      "description": "Internationally acclaimed laboratory, performing cutting-edge neuroscientific research.",
+      "position": "PhD candidate",
+      "url": "http://bml.nbe.aalto.fi/site",
+      "startDate": "2011-01-01",
+      "endDate": "2016-07-01",
+      "summary": "Managed the full cycle of research project. Developed analytic software for laboratory usage. Assisted in teaching master level biomedical statistics and experimental methods courses for Aalto University students.",
       "highlights": [
-        "Started the company"
+        "Successfully accomplished multiple projects studying human brain functioning in complex naturalistic environment using fMRI, machine learning and predictive modeling techniques.",
+        "Significantly reduced time costs for running data preprocessing and analyzes on terabytes of neural data by developing utilities and pipelines in Matlab, R and Python and parallelizing them on available cluster computing resources. Used Git version control system. Complete toolbox is used in multiple laboratories.",
+        "Assisted in teaching Experimental and Statistical Methods in Biomedical Research using R programming language. Supervised student experimental projects and provided tutoring."
       ]
     },
     {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
+      "name": "Innova Systems",
+      "location": "Moscow, Russia",
+      "description": "Major online entertainment provider in Russia, CIS, Europe and Brazil, which has been on the market for over 7 years and has published multiple successful MMORPGs.",
+      "position": "Customer support manager (GM)",
+      "url": "https://inn.ru/en",
+      "startDate": "2009-12-01",
+      "endDate": "2010-11-01",
+      "summary": "Managed a group of customer support specialists and together with PM built the customer support system from ground up. Collaborated with software development, testing and network engineering teams to enhance user experience and efficiency of support group. Streamlined and optimized the support process, allowing small team of five people to effectively handle MMORPG with estimated player count of 30000.",
       "highlights": [
-        "Started the company"
+        "Increased rate and efficiency of support department response by an order of magnitude by optimization of support system, integrating it with user community and creating process guidelines for effective communication between working groups.",
+        "Decreased rate of user problem reports by creating guidelines for solving most common issues.",
+        "Decreased connectivity issues experienced by players by conducting a research of common causes of network problems and preparing solutions together with network engineering group."
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "website": "http://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description...",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
+  "education": [
+    {
+      "institution": "Aalto University School of Science",
+      "area": "Cognitive Neuroscience",
+      "studyType": "PhD",
+      "startDate": "2011-01-07",
+      "endDate": "2018-03-22"
+    },
+    {
+      "institution": "Lomonosov Moscow State University",
+      "area": "Psychology",
+      "studyType": "Master",
+      "startDate": "2004-09-01",
+      "endDate": "2009-07-01"
+    }
+  ],
   "awards": [{
     "title": "Award",
     "date": "2014-11-01",
@@ -96,17 +105,33 @@
       "Javascript"
     ]
   }],
-  "languages": [{
-    "name": "English",
-    "level": "Native speaker"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
+  "languages": [
+    {
+      "name": "Russian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Fluent"
+    },
+    {
+      "name": "Finnish",
+      "level": "Intermediate"
+    },
+    {
+      "name": "German",
+      "level": "Basic"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
   "references": [{
     "name": "Jane Doe",
     "reference": "Reference..."

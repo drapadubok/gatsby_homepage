@@ -68,19 +68,20 @@ body {
 }
 
 /* Services */
+.services {
+}
+
 .content__main .services {
   color: rgba(255, 255, 255, 0.95);
-  background-color: #b74e91 !important;
   height: 100vh;
   padding-top: 30px;
 }
 
 .content__main .services .header {
-  color: rgba(255, 255, 255, 0.95);
 }
 .services__item {
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #b74e91;
   border-radius: 5px;
   border: solid 1px;
   border-color: rgba(255, 255, 255, 0.15);

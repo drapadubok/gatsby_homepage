@@ -12,11 +12,11 @@ class IndexRoute extends React.Component {
       items.push(<Post data={post} key={post.node.fields.slug} />);
     });
     return (
-      <Grid container stackable verticalAlign='middle' className="content__main__padding">
+      <Grid container stackable verticalAlign='middle' className="content__main__padding" style={{ marginTop: '7em' }}>
         <Grid.Row>
           <Grid.Column width={16}>
-            <Header className="title" as="header" floated='left'>
-              <p><strong>Dmitry Smirnov</strong> with thoughts on life and engineering</p>
+            <Header className="title" as="h1" floated='left'>
+              My thoughts on life, stuff and engineering
             </Header>
           </Grid.Column>
         </Grid.Row>

@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'gatsby-link';
 import moment from 'moment';
 import Disqus from '../Disqus/Disqus';
-import './style.scss';
 
 class PostTemplateDetails extends React.Component {
   render() {

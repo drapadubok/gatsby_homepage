@@ -1,6 +1,5 @@
 import React from 'react';
 import { Image, List, Icon } from 'semantic-ui-react';
-import './style.scss';
 
 class Links extends React.Component {
   render() {

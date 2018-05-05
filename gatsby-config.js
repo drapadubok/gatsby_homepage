@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
     url: 'https://dmitrysmirnov.eu/',
-    title: 'Dmitry Smirnov - Data and Shit',
-    subtitle: 'There is a lot of data and really a lot of shit.',
+    title: 'Dmitry Smirnov - Datanist',
+    subtitle: 'I live, breathe and shit data',
     copyright: '© All rights reserved.',
     disqusShortname: 'dmitrysmirnov',
     menu: [
       {
-        label: 'About me',
+        label: 'About',
         path: '/about/',
         icon: 'flask'
       },
@@ -22,13 +22,13 @@ module.exports = {
         icon: 'settings'
       },
       {
-        label: 'Contact me',
-        path: '/contact/',
+        label: 'Science',
+        path: '/science/',
         icon: 'wrench'
       },
       {
-        label: 'Academic',
-        path: '/academic/',
+        label: 'CV',
+        path: '/cv/',
         icon: 'flask'
       }
     ],
@@ -46,10 +46,18 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages'
+        name: `pages`,
+        path: `${__dirname}/src/pages`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/data`
+      }
+    },
+    `gatsby-transformer-json`,
     {
       resolve: 'gatsby-plugin-feed',
       options: {

@@ -1,11 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import '../assets/css/font-awesome.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import '../assets/css/app.css';
 import favicon from '../favicon.png';
 import SidebarComponent from '../components/SidebarComponent';
-import MediaSidebarComponent from '../components/MediaSidebar';
 import Links from '../components/Links';
 import { Container, Segment, Grid } from 'semantic-ui-react';
 import _ from 'lodash'
@@ -20,9 +18,8 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-        <Grid stackable padded columns={3}>
+        <Grid stackable padded columns={2}>
           <Helmet
-            defaultTitle="Dmitry Smirnov - Data and Shit"
             link={[
               {
                 href: favicon,
@@ -35,11 +32,8 @@ class Layout extends React.Component {
           <Grid.Column width={3} className="sidebar__left">
             <SidebarComponent {...this.props} visible={this.state.visible} />
           </Grid.Column>
-          <Grid.Column width={10} className="content__main">
+          <Grid.Column width={13} className="content__main">
             {children({...this.props})}
-          </Grid.Column>
-          <Grid.Column width={3} className="sidebar__right">
-            <MediaSidebarComponent {...this.props} visible={this.state.visible} />
           </Grid.Column>
         </Grid>
     );
@@ -69,3 +63,8 @@ export const pageQuery = graphql`
     }
   }
 `;
+/*
+<Grid.Column width={3} className="sidebar__right">
+  <MediaSidebarComponent {...this.props} visible={this.state.visible} />
+</Grid.Column>
+*/
