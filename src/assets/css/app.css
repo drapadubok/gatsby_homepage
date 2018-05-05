@@ -8,6 +8,18 @@ body {
   }
 }
 
+/* Type */
+body, input, select, textarea {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+}
+
+strong, b {
+	color: #3d4449;
+	font-weight: 600;
+}
+
 /* Layout */
 .sidebar__left {
   background-color: #312450;
@@ -74,7 +86,6 @@ body {
 .content__main .services {
   color: rgba(255, 255, 255, 0.95);
   height: 100vh;
-  padding-top: 30px;
 }
 
 .content__main .services .header {

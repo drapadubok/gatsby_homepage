@@ -1,16 +1,13 @@
 import React from 'react';
-import { Container, Header, Icon, Card, Segment, Grid, Image, Item, Label } from 'semantic-ui-react';
+import { Divider, Container, Header, Icon, Card, Segment, Grid, Image, Item, Label } from 'semantic-ui-react';
 import image from '../assets/images/image.png'
 
 class Services extends React.Component {
   render() {
     return (
-      <Segment basic className="services">
-        <Container>
-          <Header>
-            <h2>What we do</h2>
-            <p>lorem.</p>
-          </Header>
+        <Container className="services" style={{ marginTop: '7em' }}>
+          <Header as="h1">What can I do for you, you might ask?</Header>
+          <Divider className="content__main__divider"/>
           <Grid stackable>
             <Grid.Row columns={2}>
               <Grid.Column>
@@ -54,7 +51,7 @@ class Services extends React.Component {
             </Grid.Row>
           </Grid>
         </Container>
-      </Segment>
+
     );
   }
 }

@@ -1,19 +1,16 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Container, Segment, Grid } from 'semantic-ui-react';
+
+import Links from '../components/Links';
+import SidebarComponent from '../components/SidebarComponent';
 import 'semantic-ui-css/semantic.min.css';
 import '../assets/css/app.css';
 import favicon from '../favicon.png';
-import SidebarComponent from '../components/SidebarComponent';
-import Links from '../components/Links';
-import { Container, Segment, Grid } from 'semantic-ui-react';
-import _ from 'lodash'
-
 
 class Layout extends React.Component {
 
   state = {}
-
-  handleContextRef = contextRef => this.setState({ contextRef })
 
   render() {
     const { children } = this.props;

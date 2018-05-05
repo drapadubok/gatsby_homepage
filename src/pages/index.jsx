@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Post from '../components/Post';
-import { Divider, Sidebar, Grid, Segment, Button, Menu, Header } from 'semantic-ui-react';
+import { Container, Divider, Sidebar, Grid, Segment, Button, Menu, Header } from 'semantic-ui-react';
 
 class IndexRoute extends React.Component {
   render() {
@@ -12,21 +12,13 @@ class IndexRoute extends React.Component {
       items.push(<Post data={post} key={post.node.fields.slug} />);
     });
     return (
-      <Grid container stackable verticalAlign='middle' className="content__main__padding" style={{ marginTop: '7em' }}>
-        <Grid.Row>
-          <Grid.Column width={16}>
-            <Header className="title" as="h1" floated='left'>
-              My thoughts on life, stuff and engineering
-            </Header>
-          </Grid.Column>
-        </Grid.Row>
+      <Container style={{ marginTop: '7em' }}>
+        <Header className="title" as="h1">
+          My thoughts on life, stuff and engineering
+        </Header>
         <Divider className="content__main__divider"/>
-        <Grid.Row>
-          <Grid.Column width={16}>
-            {items}
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+        {items}
+      </Container>
     );
   }
 }

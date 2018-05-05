@@ -1,13 +1,15 @@
 import React from 'react';
-import { Container, Header, Icon, Card, Segment, Grid, Image, Item, Label } from 'semantic-ui-react';
+import { Container, Header, Divider, Icon, Card, Segment, Grid, Image, Item, Label } from 'semantic-ui-react';
 
 
 class Science extends React.Component {
   render() {
     return (
-      <Segment basic className="science">
-        <Container>
-
+      <Container style={{ marginTop: '7em' }}>
+        <Header className="title" as="h1">
+          Once upon a time, I decided that I wanted a career in science...
+        </Header>
+        <Divider className="content__main__divider"/>
         <p>
         As some might know, by education I am actually a psychologist. I majored in engineering psychology and in my MSc diploma tried to show that active rest (by playing a game, for example) recovers attentional resources. This was fun to work on, but then fate has thrown me to Finland, where I did a PhD in cognitive neuroscience. While at this point I'm done with it, I will still keep the info here, in case someone might get interested and I would have useful information.
         </p>
@@ -44,8 +46,7 @@ class Science extends React.Component {
         <li>Smirnov D, Lachat F, Glerean E, Lahnakoski JM, Peltola T, Koistinen OP, Vehtari A, Hari R, Sams M, Nummenmaa L. Hyperclassification reveals shared representation of action execution and observation across interacting brains. Talk at B&M Symposium. 11.-12.09.2014.</li>
         </ol>
         </div>
-        </Container>
-      </Segment>
+      </Container>
     );
   }
 }

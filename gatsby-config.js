@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     url: 'https://dmitrysmirnov.eu/',
     title: 'Dmitry Smirnov - Datanist',
-    subtitle: 'I live, breathe and shit data',
+    subtitle: 'Data frittata, anyone?',
     copyright: '© All rights reserved.',
     disqusShortname: 'dmitrysmirnov',
     menu: [
@@ -17,7 +17,7 @@ module.exports = {
         icon: 'home'
       },
       {
-        label: 'Services',
+        label: 'Hire me',
         path: '/services/',
         icon: 'settings'
       },
@@ -25,11 +25,6 @@ module.exports = {
         label: 'Science',
         path: '/science/',
         icon: 'wrench'
-      },
-      {
-        label: 'CV',
-        path: '/cv/',
-        icon: 'flask'
       }
     ],
     author: {

@@ -1,31 +1,62 @@
 import React from 'react';
-import { Grid, Divider, Container, Header, Segment } from 'semantic-ui-react';
+import { Divider, Container, Header, Segment, List } from 'semantic-ui-react';
 
 
 class About extends React.Component {
   render() {
     const { basics, education, languages, skills, work } = this.props.data.dataJson;
+    console.log(work)
     return (
-      <Grid container stackable verticalAlign='middle' className="about" style={{ marginTop: '7em' }}>
-        <Grid.Row>
-          <Grid.Column width={16}>
-            <Header className="title" as="h1" floated='left'>
-              Why might reading this be interesting to you?
-            </Header>
-          </Grid.Column>
-        </Grid.Row>
+      <Container className="about" style={{ marginTop: '7em' }}>
+        <Header className="title" as="h1">
+          Why might reading this be interesting to you?
+        </Header>
         <Divider className="content__main__divider"/>
-        <Grid.Row>
-          <Grid.Column width={16}>
-          In my experience, we usually care to learn something that we can apply to our own lifes to make them better.
-          My story is full of curves - had no idea what to do after high school. Studied psychology. Travelled around hometown teaching people to use software tool to search for legal docs. Worked as a game master in gaming company, shadow-managed a team. Moved to Finland to do a PhD in neuroscience, and learned to code. From zero to hero in statistics, machine learning and time series analysis. Taught stats to master level students. Then churned numbers for energy analytics startup. Then data engineered for music education startup. At daytime owning the stack, and responding all the questions, at night learning my way around Elixir.
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+        <List>
+          <List.Item>
+            In my experience, we usually care to learn something that we can apply to our own lifes to make them better.
+            My story is full of curves - had no idea what to do after high school. Studied psychology. Travelled around hometown teaching people to use software tool to search for legal docs. Worked as a game master in gaming company, shadow-managed a team. Moved to Finland to do a PhD in neuroscience, and learned to code. From zero to hero in statistics, machine learning and time series analysis. Taught stats to master level students. Then churned numbers for energy analytics startup. Then data engineered for music education startup. At daytime owning the stack, and responding all the questions, at night learning my way around Elixir.
+          </List.Item>
+          <List.Item>
+            <p>{basics.name}</p>
+            <p>{basics.label}</p>
+            <p>{basics.email}</p>
+            <p>{basics.phone}</p>
+          </List.Item>
+          <List.Item>
+          </List.Item>
+        </List>
+        <List>
+          {work.map(item => (
+            <List.Item key={item.name}>
+              <p>{item.name}</p>
+              <p>{item.description}</p>
+              <p>{item.location}</p>
+              <p>{item.description}</p>
+              <p>{item.position}</p>
+              <p>{item.url}</p>
+              <p>{item.startDate}</p>
+              <p>{item.endDate}</p>
+              <p>{item.summary}</p>
+              <p>{item.highlights}</p>
+            </List.Item>
+          ))}
+        </List>
+        <List>
+          {education.map(item => (
+            <List.Item key={item.name}>
+              <p>{item.institution}</p>
+              <p>{item.area}</p>
+              <p>{item.studyType}</p>
+              <p>{item.startDate}</p>
+              <p>{item.endDate}</p>
+            </List.Item>
+          ))}
+        </List>
+      </Container>
     );
   }
 }
-
 
 export default About;
 
@@ -37,7 +68,6 @@ export const pageQuery = graphql`
         label
         email
         phone
-        website
       }
       work {
         name

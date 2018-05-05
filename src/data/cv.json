@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Dmitry (Dima) Smirnov",
-    "label": "Professional problem solver",
+    "label": "Professional problem solver with PhD in neuroscience",
     "email": "dmi.smirnov07@gmail.com",
     "phone": "+35850-301-5072",
     "website": "https://www.dmitrysmirnov.eu"
@@ -108,19 +108,19 @@
   "languages": [
     {
       "name": "Russian",
-      "level": "Native"
+      "level": "Native speaker"
     },
     {
       "name": "English",
-      "level": "Fluent"
+      "level": "Sound native"
     },
     {
       "name": "Finnish",
-      "level": "Intermediate"
+      "level": "Can successfully talk to police"
     },
     {
       "name": "German",
-      "level": "Basic"
+      "level": "Seven years in highschool"
     }
   ],
   "interests": [
