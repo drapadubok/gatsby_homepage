@@ -12,21 +12,17 @@ class About extends React.Component {
           Why might reading this be interesting to you?
         </Header>
         <Divider className="content__main__divider"/>
+        In my experience, we usually care to learn something that we can apply to our own lifes to make them better.
+        My story is full of curves - had no idea what to do after high school. Studied psychology. Travelled around hometown teaching people to use software tool to search for legal docs. Worked as a game master in gaming company, shadow-managed a team. Moved to Finland to do a PhD in neuroscience, and learned to code. From zero to hero in statistics, machine learning and time series analysis. Taught stats to master level students. Then churned numbers for energy analytics startup. Then data engineered for music education startup. At daytime owning the stack, and responding all the questions, at night learning my way around Elixir.        
+        <Header as="h2">CV stuff</Header>
+        <Divider className="content__main__divider"/>
         <List>
-          <List.Item>
-            In my experience, we usually care to learn something that we can apply to our own lifes to make them better.
-            My story is full of curves - had no idea what to do after high school. Studied psychology. Travelled around hometown teaching people to use software tool to search for legal docs. Worked as a game master in gaming company, shadow-managed a team. Moved to Finland to do a PhD in neuroscience, and learned to code. From zero to hero in statistics, machine learning and time series analysis. Taught stats to master level students. Then churned numbers for energy analytics startup. Then data engineered for music education startup. At daytime owning the stack, and responding all the questions, at night learning my way around Elixir.
-          </List.Item>
           <List.Item>
             <p>{basics.name}</p>
             <p>{basics.label}</p>
             <p>{basics.email}</p>
             <p>{basics.phone}</p>
           </List.Item>
-          <List.Item>
-          </List.Item>
-        </List>
-        <List>
           {work.map(item => (
             <List.Item key={item.name}>
               <p>{item.name}</p>

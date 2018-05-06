@@ -63,6 +63,7 @@ strong, b {
   transition: color 2s ease;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
+  margin-top: 20px !important;
 }
 
 .sidebar__left__menu__link:hover {
