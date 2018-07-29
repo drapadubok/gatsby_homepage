@@ -1,8 +1,7 @@
 {
-  "version": "2.0.2",
-  "name": "gatsby-starter-lumen",
-  "description": "Simple starter for Gatsby",
-  "main": "n/a",
+  "version": "1.0.0",
+  "name": "dmitrysmirnov_home",
+  "description": "Homepage for Dmitry Smirnov",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -20,9 +19,10 @@
     "theme",
     "starter"
   ],
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "author": "Dmitry Smirnov, based on starter by Alexander Shelepenok <alxshelepenok@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^1.3.0",
     "bluebird": "^3.5.1",
     "gatsby": "^1.9.164",
     "gatsby-link": "^1.6.34",
@@ -33,6 +33,7 @@
     "gatsby-plugin-offline": "^1.0.12",
     "gatsby-plugin-postcss-sass": "^1.0.15",
     "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sharp": "^1.6.25",
     "gatsby-plugin-sitemap": "^1.2.10",
     "gatsby-remark-copy-linked-files": "^1.5.25",
@@ -45,11 +46,11 @@
     "gatsby-transformer-remark": "^1.7.28",
     "gatsby-transformer-sharp": "^1.6.16",
     "lodash": "^4.17.4",
-    "react": "^15.6.1",
     "react-disqus-comments": "^1.1.1",
     "react-helmet": "^5.2.0",
     "semantic-ui-css": "^2.2.14",
-    "semantic-ui-react": "^0.77.2"
+    "semantic-ui-react": "^0.77.2",
+    "styled-components": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^4.14.0",

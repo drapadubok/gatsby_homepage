@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Post from '../components/Post';
 import { Container, Divider, Sidebar, Grid, Segment, Button, Menu, Header } from 'semantic-ui-react';
 
-class IndexRoute extends React.Component {
+class Blog extends React.Component {
   render() {
     const items = [];
     const { title, subtitle } = this.props.data.site.siteMetadata;
@@ -23,10 +23,10 @@ class IndexRoute extends React.Component {
   }
 }
 
-export default IndexRoute;
+export default Blog;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     site {
       siteMetadata {
         title

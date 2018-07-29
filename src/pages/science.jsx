@@ -5,7 +5,7 @@ import { Container, Header, Divider, Icon, Card, Segment, Grid, Image, Item, Lab
 class Science extends React.Component {
   render() {
     return (
-      <Container style={{ marginTop: '7em' }}>
+      <Container>
         <Header className="title" as="h1">
           Once upon a time, I decided that I wanted a career in science...
         </Header>

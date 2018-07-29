@@ -1,20 +1,20 @@
 module.exports = {
   siteMetadata: {
     url: 'https://dmitrysmirnov.eu/',
-    title: 'Dmitry Smirnov - Datanist',
+    title: 'Dmitry Smirnov - Data Satanist',
     subtitle: 'Data frittata, anyone?',
     copyright: '© All rights reserved.',
     disqusShortname: 'dmitrysmirnov',
     menu: [
       {
         label: 'About',
-        path: '/about/',
-        icon: 'flask'
+        path: '/about',
+        icon: 'home'
       },
       {
         label: 'Blog',
         path: '/',
-        icon: 'home'
+        icon: 'flask'
       },
       {
         label: 'Hire me',
@@ -38,6 +38,8 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-transformer-json`,
+    `gatsby-plugin-react-next`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -48,11 +50,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: `json`,
+        name: `data`,
         path: `${__dirname}/src/data`
       }
     },
-    `gatsby-transformer-json`,
     {
       resolve: 'gatsby-plugin-feed',
       options: {

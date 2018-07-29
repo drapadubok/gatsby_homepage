@@ -26,11 +26,6 @@ strong, b {
   min-height: 100vh;
 }
 
-.sidebar__right {
-  background-color: #312450;
-  min-height: 100vh;
-}
-
 .content__main {
   background-color: #f1f1f1;
   height: 100vh;

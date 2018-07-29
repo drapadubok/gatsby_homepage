@@ -15,11 +15,13 @@
       "url": "https://yousician.com",
       "startDate": "2017-02-01",
       "endDate": "Present",
-      "summary": "",
+      "summary": "Developed and owned most of the data stack, solved analytic and engineering challenges.",
       "highlights": [
-        "",
-        "",
-        ""
+        "3rd party stuff",
+        "etl and data warehouse optimizations",
+        "countless dashboards and data marts",
+        "redshift spectrum",
+        "data intranet"
       ]
     },
     {
@@ -83,28 +85,93 @@
       "endDate": "2009-07-01"
     }
   ],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "website": "http://publication.com",
-    "summary": "Description..."
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  }],
+  "awards": [
+    {
+      "title": "Scholarship for PhD research",
+      "date": "2012-11-01",
+      "awarder": "Kordelin Foundation",
+      "summary": "Funding for 3 full employment years of research"
+    },
+    {
+      "title": "Scholarship for PhD research",
+      "date": "2015-11-01",
+      "awarder": "Finnish Cultural Foundation",
+      "summary": "Funding for a year of full employment research"
+    }
+  ],
+  "publications": [
+    {
+      "authors": "Smirnov D, Glerean E, Lahnakoski JM, Salmi J, Jääskeläinen IP, Sams M, Nummenmaa L.",
+      "name": "Fronto-parietal network supports context-dependent speech comprehension.",
+      "publisher": "Neuropsychologia",
+      "releaseDate": "2014",
+      "website": "http://www.sciencedirect.com/science/article/pii/S0028393214003121",
+      "summary": ""
+    },
+    {
+      "authors": "Nummenmaa L, Smirnov D, Lahnakoski JM, Glerean E, Jääskeläinen IP, Sams M, Hari R.",
+      "name": "Mental action simulation synchronizes action-observation circuits across individuals.",
+      "publisher": "Journal of Neuroscience",
+      "releaseDate": "2014",
+      "website": "http://www.jneurosci.org/content/34/3/748.full",
+      "summary": ""
+    },
+    {
+      "authors": "Smirnov D, Lachat F, Peltola T, Lahnakoski JM, Koistinen OP, Glerean E, Vehtari A, Hari R, Sams M, Nummenmaa L.",
+      "name": "Brain-to-brain hyperclassification reveals action-specific motor mapping of observed actions in humans.",
+      "publisher": "PLOS ONE",
+      "releaseDate": "2017",
+      "website": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189508",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Data Science",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Communication",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Problem Solving",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    }
+  ],
   "languages": [
     {
       "name": "Russian",
@@ -123,17 +190,6 @@
       "level": "Seven years in highschool"
     }
   ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference..."
-  }]
+  "traits": [],
+  "interests": []
 }

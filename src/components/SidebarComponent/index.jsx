@@ -16,7 +16,7 @@ class SidebarComponent extends React.Component {
   }
 
   render() {
-    const { location, visible } = this.props;
+    const { location } = this.props;
     const { author, subtitle, menu } = this.props.data.site.siteMetadata;
     const isHomePage = get(location, 'pathname', '/') === '/';
     const { activeItem } = this.state;
@@ -35,6 +35,7 @@ class SidebarComponent extends React.Component {
             <Link to="/">{author.name}</Link>
           </Header>
           <p className="sidebar__left__subtitle">{subtitle}</p>
+          <p className="sidebar__left__subtitle">My minimal pitch.</p>
         </Segment>
         <List selection className="sidebar__left__menu">
           {menu.map(item => (
@@ -51,52 +52,3 @@ class SidebarComponent extends React.Component {
 }
 
 export default SidebarComponent;
-
-/*
-
-  <div className="sidebar__left__menu__link">
-    <List.Item as={Link} key={item.path} exact to={item.path}>
-      <List.Content floated='right'>
-        <Icon name={item.icon} />
-      </List.Content>
-      <List.Content>
-        {item.label}
-      </List.Content>
-    </List.Item>
-    <Divider className="sidebar__left__menu__divider"/>
-  </div>
-
-  <div>
-    <Icon name={item.icon} />
-    <List.Item className="sidebar__left__menu__link"
-      as={Link} exact key={item.path} to={item.path}>
-      <List.Content floated='right'>
-        {item.label}
-      </List.Content>
-    </List.Item>
-    <Divider className="sidebar__left__menu__divider"/>
-  </div>
-
-<div className="sidebar__left__menu__item">
-  <List.Item className="sidebar__left__menu__link"
-    as={Link} exact key={item.path} to={item.path}>
-    {item.label}
-    <List.Content floated='right'>
-      <Icon name={item.icon}/>
-    </List.Content>
-    <Divider className="sidebar__left__menu__divider"/>
-  </List.Item>
-</div>
-
-
-<div className="sidebar__left__menu__link">
-  <List.Item
-    as={Link} exact key={item.path} to={item.path}>
-    {item.label}
-    <List.Content floated='right'>
-      <Icon name={item.icon}/>
-    </List.Content>
-  </List.Item>
-  <Divider className="sidebar__left__menu__divider"/>
-</div>
-*/
